@@ -1,0 +1,30 @@
+.Navbar {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  background-color:#2A2B72;
+
+  height: 70px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  
+  
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  
+}
+
+.LogoNav {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 769px) {
+  .ToggleButton {
+    display: none;
+  }
+}

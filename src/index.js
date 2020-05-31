@@ -1,14 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import "./index.css";
+
+import * as serviceWorker from "./serviceWorker";
+
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { ProductProvider } from "./context";
+import React from "react";
+import ReactDOM from "react-dom";
+
+// document.body.style.backgroundColor = "#EEEDE7";
+document.body.style.backgroundColor = "#F3F3F3";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <ProductProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </ProductProvider>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
